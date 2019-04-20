@@ -146,7 +146,7 @@ public class MyArrayList<T> implements MyList<T> {
         arr = null;
         size = 0;
     }
-
+    
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
@@ -156,8 +156,9 @@ public class MyArrayList<T> implements MyList<T> {
                 result.append(", ").append(arr[i]);
             }
         } catch (Exception e) {
+            e.printStackTrace();
         }
         return result.toString();
     }
-
+    
 }
